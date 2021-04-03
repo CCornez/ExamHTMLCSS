@@ -128,6 +128,11 @@ main a {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 15px;
+  transition: all 300ms;
+}
+main a:hover {
+  color: var(--orange);
+  border-color: var(--orange);
 }
 section {
   width: 35%;
@@ -193,6 +198,10 @@ section form button {
   text-transform: capitalize;
   color: var(--white);
   background-color: var(--orange);
+}
+section form button:hover {
+  color: var(--orange);
+  background-color: var(--black);
 }
 footer {
   background-color: var(--white);
