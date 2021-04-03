@@ -16,7 +16,7 @@ font-family: 'Raleway', sans-serif; */
 }
 body {
   background-image: url(../images/banner_background.jpg);
-  background-size: cover;
+  background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: top center;
 }
