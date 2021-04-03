@@ -18,6 +18,7 @@ body {
   background-image: url(../images/banner_background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: top center;
 }
 header {
   background-color: var(--black);
@@ -42,10 +43,6 @@ button {
   justify-content: space-between;
   align-items: center;
 }
-main,
-section {
-  padding: 139px 0;
-}
 nav ul {
   display: flex;
 }
@@ -54,6 +51,9 @@ nav ul li {
   font-weight: 600;
   font-size: 14px;
   text-transform: capitalize;
+}
+nav ul li:first-child {
+  display: none;
 }
 nav ul li a {
   display: block;
@@ -64,6 +64,10 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: var(--orange);
+}
+main,
+section {
+  padding: 139px 0;
 }
 main {
   position: relative;
@@ -193,4 +197,49 @@ footer h2 {
 }
 .logos a:hover {
   color: var(--orange);
+}
+
+@media screen and (max-width: 860px) {
+  .container {
+    width: 90%;
+  }
+  .container:nth-child(2) {
+    flex-direction: column;
+  }
+  main,
+  section {
+    width: 100%;
+    padding: 50px 0;
+  }
+  main {
+    padding-top: 75px;
+  }
+  main img {
+    top: 50px;
+  }
+  .logos {
+    width: 60%;
+  }
+  nav ul li a {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    width: 97%;
+  }
+  main,
+  section {
+    padding: 20px 0;
+  }
+  main {
+    padding-top: 75px;
+  }
+  nav ul li {
+    display: none;
+  }
+  nav ul li:first-child {
+    display: block;
+  }
 }
