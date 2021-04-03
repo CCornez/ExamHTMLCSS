@@ -32,11 +32,6 @@ a {
   align-items: center;
   background-color: green;
 }
-header .container a {
-}
-nav {
-  /* padding: 28px 0; */
-}
 nav ul {
   display: flex;
 }
