@@ -226,6 +226,9 @@ footer h2 {
   }
 }
 @media screen and (max-width: 500px) {
+  body {
+    margin: 0;
+  }
   .container {
     width: 97%;
   }
@@ -241,5 +244,17 @@ footer h2 {
   }
   nav ul li:first-child {
     display: block;
+  }
+  .textLogo {
+    width: 50%;
+  }
+  .logos {
+    width: 40%;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 350px) {
+  .logos a {
+    font-size: 40px;
   }
 }
