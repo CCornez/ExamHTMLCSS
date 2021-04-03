@@ -44,6 +44,7 @@ button {
   align-items: center;
 }
 nav ul {
+  position: relative;
   display: flex;
 }
 nav ul li {
@@ -64,6 +65,15 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: var(--orange);
+}
+.line::after {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 5px;
+  background-color: var(--graydark);
+  margin: 3px 0;
+  padding: 0;
 }
 main,
 section {
